@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   @media (max-width: 992px) {
     left: 50%;
     transform: translateX(-50%);
-    
+
   }
 `;
 

@@ -22,6 +22,14 @@ const WhiteBG = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 7px;
+  position: relative;
+
+  @media (max-width: 992px) {
+    height: 100vh;
+    width: 100vw;
+    /* justify-content: center; */
+    align-items: center;
+  }
 `;
 
 const TopRow = styled.div`
@@ -34,6 +42,11 @@ const TopRow = styled.div`
     font-size: 2rem;
     color: hsl(229, 25%, 31%);
     font-weight: 700;
+
+    @media (max-width: 992px) {
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
   }
 
   img {
@@ -41,7 +54,20 @@ const TopRow = styled.div`
     height: 1.2rem;
     align-self: center;
     cursor: pointer;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
+`;
+
+const CloseIcon = styled.img`
+position: absolute;
+bottom: 5rem;
+
+@media (min-width: 992px) {
+  display: none;
+}
 `;
 
 function RulesModal(props) {
@@ -50,9 +76,10 @@ function RulesModal(props) {
       <WhiteBG>
         <TopRow>
           <p>RULES</p>
-          <img src={closeIcon} alt="close" onClick={props.onClick}/>
+          <img src={closeIcon} alt="close" onClick={props.onClick} />
         </TopRow>
         <img src={rulesImg} alt="rules" />
+        <CloseIcon src={closeIcon} alt="close" onClick={props.onClick} />
       </WhiteBG>
     </BlackBG>
   );
