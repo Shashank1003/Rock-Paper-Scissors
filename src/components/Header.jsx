@@ -15,14 +15,16 @@ const Container = styled.div`
   width: 700px;
 
   @media (max-width: 992px){
-      width: 300px;
+      width: 90vw;
       padding: 1rem;
       border-radius: 7px;
+      margin-top: 2rem;
   }
 `;
 
 const Heading = styled.img`
 align-self: center;
+
 @media (max-width: 992px) {
     width: 7rem;
     height: 4rem;

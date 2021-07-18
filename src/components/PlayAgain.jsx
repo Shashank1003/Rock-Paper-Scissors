@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 992px) {
-    bottom: 12rem;
+    bottom: 11rem;
     margin-right: 0rem;
   }
 `;
@@ -42,6 +42,10 @@ const Status = styled.p`
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 2px;
+
+  @media (max-width: 992px) {
+    font-size: 3.5rem;
+  }
 `;
 
 const PlayAgainButton = styled.button`

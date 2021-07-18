@@ -25,6 +25,7 @@ const ButtonBox = styled.div`
     width: 300px;
     height: 18rem;
     background-size: 80%;
+    margin-top: 8rem;
   }
 `;
 

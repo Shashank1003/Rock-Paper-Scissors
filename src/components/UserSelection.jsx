@@ -94,6 +94,13 @@ const ButtonWrapper = styled.div`
           transform: scale(1.2);
         }
       }
+
+      @media (max-width: 992px) {
+        width: 180px;
+        height: 180px;
+        left: -2.4rem;
+        top: -2.4rem;
+      }
     }
 
     .lrg {
@@ -123,6 +130,13 @@ const ButtonWrapper = styled.div`
           transform: scale(1.2);
         }
       }
+
+      @media (max-width: 992px) {
+        width: 230px;
+        height: 230px;
+        left: -4rem;
+        top: -4rem;
+      }
     }
 
     .xlrg {
@@ -151,6 +165,13 @@ const ButtonWrapper = styled.div`
           opacity: 0;
           transform: scale(1.2);
         }
+      }
+
+      @media (max-width: 992px) {
+        width: 300px;
+        height: 300px;
+        left: -6.2rem;
+        top: -6.2rem;
       }
     }
   }

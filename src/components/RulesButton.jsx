@@ -7,7 +7,9 @@ const Wrapper = styled.div`
   right: 2rem;
 
   @media (max-width: 992px) {
-      right: 7rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    
   }
 `;
 
@@ -28,7 +30,6 @@ const Rules = styled.button`
     background-color: white;
     color: hsl(229, 25%, 31%);
   }
-
 `;
 
 function RulesButton(props) {
