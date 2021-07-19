@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     position: absolute;
     bottom: 5rem;
     margin-right: 2rem;
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   @media (max-width: 992px) {
     bottom: 12rem;
     margin-right: 0rem;
-  }
+  } */
 `;
 
 const Status = styled.p`

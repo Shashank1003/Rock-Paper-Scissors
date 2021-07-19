@@ -16,6 +16,7 @@ const ButtonBox = styled.div`
   margin-right: auto;
   margin-left: auto;
   margin-top: 10rem;
+  margin-bottom: 3rem;
   height: 25rem;
   background-image: url(${triangle});
   background-repeat: no-repeat;
