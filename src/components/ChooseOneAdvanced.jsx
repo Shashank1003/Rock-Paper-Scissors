@@ -31,8 +31,61 @@ const ButtonBox = styled.div`
   }
 `;
 
-function ChooseOneAdvanced() {
-  return <ButtonBox></ButtonBox>;
+function ChooseOneAdvanced(props) {
+  return (
+    <ButtonBox>
+      <Button
+        signName="paper"
+        image={paper}
+        darkColor="hsl(230, 89%, 62%)"
+        lightColor="hsl(230, 89%, 65%)"
+        shadowColor="hsl(225, 70%, 40%)"
+        onClick={props.onClick}
+      />
+
+      <Button
+        signName="scissors"
+        image={scissors}
+        darkColor="hsl(39, 89%, 49%)"
+        lightColor="hsl(40, 84%, 53%)"
+        shadowColor="hsl(34, 98%, 35%)"
+        onClick={props.onClick}
+      />
+
+      <Button
+        signName="rock"
+        image={rock}
+        darkColor="hsl(349, 71%, 52%)"
+        lightColor="hsl(349, 70%, 56%)"
+        shadowColor="hsl(347, 65%, 40%)"
+        position="absolute"
+        className="red"
+        onClick={props.onClick}
+      />
+
+      <Button
+        signName="lizard"
+        image={lizard}
+        darkColor="hsl(349, 71%, 52%)"
+        lightColor="hsl(349, 70%, 56%)"
+        shadowColor="hsl(347, 65%, 40%)"
+        position="absolute"
+        className="red"
+        onClick={props.onClick}
+      />
+
+      <Button
+        signName="spock"
+        image={spock}
+        darkColor="hsl(349, 71%, 52%)"
+        lightColor="hsl(349, 70%, 56%)"
+        shadowColor="hsl(347, 65%, 40%)"
+        position="absolute"
+        className="red"
+        onClick={props.onClick}
+      />
+    </ButtonBox>
+  );
 }
 
 export default ChooseOneAdvanced;

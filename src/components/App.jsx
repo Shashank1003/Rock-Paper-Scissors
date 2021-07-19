@@ -20,29 +20,6 @@ function App() {
   const [count, setCount] = useState(0);
   const [modalTrigger, setModalTrigger] = useState(false);
 
-  const initialScreenSize = () => {
-    if (window.innerWidth > 992) {
-      return false;
-    } else {
-      return true;
-    }
-  };
-
-  const [isSmall, setIsSmall] = useState(initialScreenSize);
-
-  const resizeHandler = () => {
-    if (window.innerWidth > 992) {
-      return setIsSmall(false);
-    } else {
-      return setIsSmall(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", resizeHandler);
-    return () => window.removeEventListener("resize", resizeHandler);
-  });
-
   const clicked = (signName) => {
     setName(signName);
     setTrigger(true);
