@@ -9,7 +9,7 @@ const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5rem;
-margin-top: 4rem;
+  margin-top: 4rem;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -31,7 +31,7 @@ const BigScreenDiv = styled.div`
 `;
 
 const SmallScreenDiv = styled.div`
-margin-top: 1rem;
+  margin-top: 1rem;
   @media (min-width: 992px) {
     display: none;
   }
