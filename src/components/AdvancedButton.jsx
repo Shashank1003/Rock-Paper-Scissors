@@ -1,24 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  /* position: absolute;
-  bottom: 5rem;
-  right: 2rem;
+const Wrapper = styled.div``;
 
-  @media (max-width: 992px) {
-    left: 50%;
-    transform: translateX(-50%);
-
-  } */
-`;
-
-const Rules = styled.button`
-  width: 9rem;
+const Advanced = styled.button`
+  width: 11rem;
   height: 2.8rem;
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  margin-right: 1rem;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -36,12 +27,12 @@ const Rules = styled.button`
   }
 `;
 
-function RulesButton(props) {
+function AdvancedButton() {
   return (
     <Wrapper>
-      <Rules onClick={props.onClick}>RULES</Rules>
+      <Advanced>Advanced Mode</Advanced>
     </Wrapper>
   );
 }
 
-export default RulesButton;
+export default AdvancedButton;

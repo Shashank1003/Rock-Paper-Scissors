@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import ChooseOne from "./ChooseOne";
 import PlayScreen from "./PlayScreen";
-import RulesButton from "./RulesButton";
 import RulesModal from "./RulesModal";
+import Footer from "./Footer";
 
 const Container = styled.div`
   display: flex;
@@ -122,7 +122,9 @@ function App() {
         />
       )}
 
-      <RulesButton onClick={rulesModalHandler} />
+      {/* <RulesButton onClick={rulesModalHandler} /> */}
+
+      <Footer onClick={rulesModalHandler} />
       {modalTrigger === true ? <RulesModal onClick={rulesModalHandler} /> : ""}
     </Container>
   );
