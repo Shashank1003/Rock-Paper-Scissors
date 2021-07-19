@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 992px) {
-    bottom: 11rem;
+    bottom: 12rem;
     margin-right: 0rem;
   }
 `;

@@ -9,7 +9,12 @@ const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5rem;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  width: 100vw;
 
   @media (max-width: 992px) {
     flex-direction: column;

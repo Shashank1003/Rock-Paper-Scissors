@@ -111,14 +111,14 @@ function App() {
       <Header score={score} />
 
       {trigger === false ? (
-        <ChooseOne onClick={clicked} isSmall={isSmall} />
+        <ChooseOne onClick={clicked} />
       ) : (
         <PlayScreen
           Name={Name}
           status={status}
           random={randomInt}
           playAgain={playAgainHandler}
-          isSmall={isSmall}
+    
         />
       )}
 
