@@ -9,12 +9,15 @@ const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 10rem;
+  position: relative;
+  z-index: 4;
 
   @media (max-width: 992px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
   }
 `;
 
