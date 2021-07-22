@@ -27,10 +27,12 @@ const Advanced = styled.button`
   }
 `;
 
-function AdvancedButton() {
+function AdvancedButton(props) {
   return (
     <Wrapper>
-      <Advanced>Advanced Mode</Advanced>
+      <Advanced onClick={props.onClick}>
+        {props.isAdvanced === true ? "Normal Mode" : "Advanced Mode"}
+      </Advanced>
     </Wrapper>
   );
 }

@@ -98,6 +98,41 @@ const Container = styled.div`
     bottom: 1.5rem;
     transform: translateX(-50%);
   }
+
+  &.cyan {
+    /* display: none; */
+    position: absolute;
+    top: 5rem;
+    left: -4rem;
+  }
+
+  &.yellow {
+    /* display: none; */
+    position: absolute;
+    left: 9rem;
+    top: -4.5rem;
+  }
+
+  &.blue {
+    /* display: none; */
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+  }
+
+  &.purple {
+    /* display: none; */
+    position: absolute;
+    bottom: -4rem;
+    left: 0.5rem;
+  }
+
+  &.redAdvanced {
+    /* display: none; */
+    position: absolute;
+    bottom: -4rem;
+    right: 1rem;
+  }
 `;
 
 const Image = styled.img`

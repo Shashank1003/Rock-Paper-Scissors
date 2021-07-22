@@ -4,6 +4,8 @@ import Button from "./Button";
 import rock from "../images/icon-rock.svg";
 import paper from "../images/icon-paper.svg";
 import scissors from "../images/icon-scissors.svg";
+import lizard from "../images/icon-lizard.svg";
+import spock from "../images/icon-spock.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -241,7 +243,7 @@ function ComputerSelection(props) {
           ""
         )}
 
-        {props.random === 0 ? (
+        {props.random === 1 ? (
           <Button
             signName="paper"
             image={paper}
@@ -250,9 +252,8 @@ function ComputerSelection(props) {
             shadowColor="hsl(225, 70%, 40%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
           />
-        ) : props.random === 1 ? (
+        ) : props.random === 2 ? (
           <Button
             signName="scissors"
             image={scissors}
@@ -261,9 +262,8 @@ function ComputerSelection(props) {
             shadowColor="hsl(34, 98%, 35%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
           />
-        ) : props.random === 2 ? (
+        ) : props.random === 3 ? (
           <Button
             signName="rock"
             image={rock}
@@ -272,7 +272,26 @@ function ComputerSelection(props) {
             shadowColor="hsl(347, 65%, 40%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
+          />
+        ) : props.random === 4 ? (
+          <Button
+            signName="lizard"
+            image={lizard}
+            darkColor="hsl(261, 73%, 60%)"
+            lightColor="hsl(261, 72%, 63%)"
+            shadowColor="hsl(265, 65%, 40%)"
+            onClick={disableClick}
+            scale="1.5"
+          />
+        ) : props.random === 5 ? (
+          <Button
+            signName="spock"
+            image={spock}
+            darkColor="hsl(189, 59%, 53%)"
+            lightColor="hsl(189, 58%, 57%)"
+            shadowColor="hsl(189, 65%, 40%)"
+            onClick={disableClick}
+            scale="1.5"
           />
         ) : (
           ""

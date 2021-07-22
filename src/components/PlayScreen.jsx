@@ -10,7 +10,7 @@ const ScreenWrapper = styled.div`
   justify-content: space-around;
   margin-top: 5rem;
   align-items: center;
-  /* margin-bottom: 8rem; */
+  margin-bottom: 8rem;
 
   @media (max-width: 992px) {
     /* justify-content: space-between; */

@@ -9,8 +9,9 @@ const FooterWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
   position: relative;
+  bottom: 2rem;
   z-index: 4;
 
   @media (max-width: 992px) {
@@ -48,8 +49,11 @@ function Footer(props) {
       </BigScreenDiv>
 
       <ButtonBox>
-        <AdvancedButton />
-        <RulesButton onClick={props.onClick} />
+        <AdvancedButton
+          onClick={props.onClickAdvanced}
+          isAdvanced={props.isAdvanced}
+        />
+        <RulesButton onClick={props.onClickRules} />
       </ButtonBox>
 
       <SmallScreenDiv>

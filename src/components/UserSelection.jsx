@@ -4,6 +4,8 @@ import Button from "./Button";
 import rock from "../images/icon-rock.svg";
 import paper from "../images/icon-paper.svg";
 import scissors from "../images/icon-scissors.svg";
+import lizard from "../images/icon-lizard.svg";
+import spock from "../images/icon-spock.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -219,7 +221,6 @@ function UserSelection(props) {
             shadowColor="hsl(347, 65%, 40%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
           />
         ) : props.Name === "paper" ? (
           <Button
@@ -230,7 +231,6 @@ function UserSelection(props) {
             shadowColor="hsl(225, 70%, 40%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
           />
         ) : props.Name === "scissors" ? (
           <Button
@@ -241,7 +241,26 @@ function UserSelection(props) {
             shadowColor="hsl(34, 98%, 35%)"
             onClick={disableClick}
             scale="1.5"
-            scaleS="1"
+          />
+        ) : props.Name === "lizard" ? (
+          <Button
+            signName="lizard"
+            image={lizard}
+            darkColor="hsl(261, 73%, 60%)"
+            lightColor="hsl(261, 72%, 63%)"
+            shadowColor="hsl(265, 65%, 40%)"
+            onClick={disableClick}
+            scale="1.5"
+          />
+        ) : props.Name === "spock" ? (
+          <Button
+            signName="spock"
+            image={spock}
+            darkColor="hsl(189, 59%, 53%)"
+            lightColor="hsl(189, 58%, 57%)"
+            shadowColor="hsl(189, 65%, 40%)"
+            onClick={disableClick}
+            scale="1.5"
           />
         ) : (
           ""

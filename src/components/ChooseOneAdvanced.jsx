@@ -20,6 +20,7 @@ const ButtonBox = styled.div`
   margin-top: 10rem;
   height: 25rem;
   background-image: url(${pentagon});
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -41,6 +42,7 @@ function ChooseOneAdvanced(props) {
         lightColor="hsl(230, 89%, 65%)"
         shadowColor="hsl(225, 70%, 40%)"
         onClick={props.onClick}
+        className="blue"
       />
 
       <Button
@@ -50,6 +52,7 @@ function ChooseOneAdvanced(props) {
         lightColor="hsl(40, 84%, 53%)"
         shadowColor="hsl(34, 98%, 35%)"
         onClick={props.onClick}
+        className="yellow"
       />
 
       <Button
@@ -58,31 +61,28 @@ function ChooseOneAdvanced(props) {
         darkColor="hsl(349, 71%, 52%)"
         lightColor="hsl(349, 70%, 56%)"
         shadowColor="hsl(347, 65%, 40%)"
-        position="absolute"
-        className="red"
+        className="redAdvanced"
         onClick={props.onClick}
       />
 
       <Button
         signName="lizard"
         image={lizard}
-        darkColor="hsl(349, 71%, 52%)"
-        lightColor="hsl(349, 70%, 56%)"
-        shadowColor="hsl(347, 65%, 40%)"
-        position="absolute"
-        className="red"
+        darkColor="hsl(261, 73%, 60%)"
+        lightColor="hsl(261, 72%, 63%)"
+        shadowColor="hsl(265, 65%, 40%)"
         onClick={props.onClick}
+        className="purple"
       />
 
       <Button
         signName="spock"
         image={spock}
-        darkColor="hsl(349, 71%, 52%)"
-        lightColor="hsl(349, 70%, 56%)"
-        shadowColor="hsl(347, 65%, 40%)"
-        position="absolute"
-        className="red"
+        darkColor="hsl(189, 59%, 53%)"
+        lightColor="hsl(189, 58%, 57%)"
+        shadowColor="hsl(189, 65%, 40%)"
         onClick={props.onClick}
+        className="cyan"
       />
     </ButtonBox>
   );
