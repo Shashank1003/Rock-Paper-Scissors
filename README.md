@@ -35,12 +35,10 @@ Users should be able to:
 
 ![](screenshots/secondScreen_normalMode.png)
 
-
 #### Mobile layout
 ![](screenshots/firstScreen_mobile.png)
 
 ![](screenshots/secondScreen_mobile.png)
-
 
 ### Links
 
