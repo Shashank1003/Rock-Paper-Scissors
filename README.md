@@ -33,7 +33,7 @@ Users should be able to:
 
 ![](screenshots/firstScreen_advancedMode.png)
 
-![](screenshots/secondScreen_normalMode.png)
+![](screenshots/secondScreen.png)
 
 #### Mobile layout
 ![](screenshots/firstScreen_mobile.png)
