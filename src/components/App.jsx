@@ -23,6 +23,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [modalTrigger, setModalTrigger] = useState(false);
   const [isAdvanced, setIsAdvanced] = useState(false);
+  const [mode, setMode] = useState("normal");
 
   const clicked = (signName) => {
     setName(signName);
@@ -54,6 +55,64 @@ function App() {
     }
   };
 
+  const getLogic = () => {
+    switch (Name) {
+      case "paper":
+        if (randomInt === 3 || randomInt === 5) {
+          setStatus("win");
+        } else if (randomInt === 2 || randomInt === 4) {
+          setStatus("lose");
+        } else {
+          setStatus("draw");
+        }
+        break;
+
+      case "scissors":
+        if (randomInt === 1 || randomInt === 4) {
+          setStatus("win");
+        } else if (randomInt === 3 || randomInt === 5) {
+          setStatus("lose");
+        } else {
+          setStatus("draw");
+        }
+        break;
+
+      case "rock":
+        if (randomInt === 4 || randomInt === 2) {
+          setStatus("win");
+        } else if (randomInt === 5 || randomInt === 1) {
+          setStatus("lose");
+        } else {
+          setStatus("draw");
+        }
+        break;
+
+      case "lizard":
+        if (randomInt === 1 || randomInt === 5) {
+          setStatus("win");
+        } else if (randomInt === 2 || randomInt === 3) {
+          setStatus("lose");
+        } else {
+          setStatus("draw");
+        }
+        break;
+
+      case "spock":
+        if (randomInt === 2 || randomInt === 3) {
+          setStatus("win");
+        } else if (randomInt === 1 || randomInt === 4) {
+          setStatus("lose");
+        } else {
+          setStatus("draw");
+        }
+        break;
+
+      default:
+        console.log("Not decided yet");
+        break;
+    }
+  };
+
   useEffect(() => {
     if (trigger === true) {
       return setCount((preVal) => {
@@ -62,39 +121,7 @@ function App() {
     }
   }, [trigger]);
 
-  useEffect(() => {
-    if (
-      (Name === "rock" && (randomInt === 1 || 5)) ||
-      (Name === "paper" && (randomInt === 2 || 4)) ||
-      (Name === "scissors" && (randomInt === 3 || 5)) ||
-      (Name === "lizard" && (randomInt === 3 || 2)) ||
-      (Name === "spock" && (randomInt === 4 || 1))
-    ) {
-      setStatus("lose");
-      console.log(Name);
-      console.log(randomInt);
-    } else if (
-      (Name === "rock" && (randomInt === 2 || 4)) ||
-      (Name === "paper" && (randomInt === 3 || 5)) ||
-      (Name === "scissors" && (randomInt === 1 || 4)) ||
-      (Name === "lizard" && (randomInt === 5 || 1)) ||
-      (Name === "spock" && (randomInt === 2 || 3))
-    ) {
-      setStatus("win");
-      console.log(Name);
-      console.log(randomInt);
-    } else if (
-      (Name === "rock" && randomInt === 3) ||
-      (Name === "paper" && randomInt === 1) ||
-      (Name === "scissors" && randomInt === 2) ||
-      (Name === "lizard" && randomInt === 4) ||
-      (Name === "spock" && randomInt === 5)
-    ) {
-      setStatus("draw");
-      console.log(Name);
-      console.log(randomInt);
-    }
-  }, [randomInt, Name, count]);
+  useEffect(getLogic, [randomInt, Name, count]);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -114,6 +141,14 @@ function App() {
     }, 1000);
     return () => clearTimeout(timeout);
   }, [status, count]);
+
+  useEffect(() => {
+    if (isAdvanced === true) {
+      return setMode("advanced");
+    } else {
+      return setMode("normal");
+    }
+  }, [isAdvanced]);
 
   return (
     <Container>
@@ -139,7 +174,11 @@ function App() {
         onClickAdvanced={advancedModeTrigger}
         isAdvanced={isAdvanced}
       />
-      {modalTrigger === true ? <RulesModal onClick={rulesModalHandler} /> : ""}
+      {modalTrigger === true ? (
+        <RulesModal onClick={rulesModalHandler} mode={mode} />
+      ) : (
+        ""
+      )}
     </Container>
   );
 }

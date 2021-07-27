@@ -20,8 +20,8 @@ const Disk = styled.button`
   transition: all 0.1s ease-in-out;
 
   @media (max-width: 992px) {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   /* z-index: -2; */
@@ -48,10 +48,10 @@ const Disk = styled.button`
     box-shadow: -5px 5px ${(props) => props.shadowColor};
 
     @media (max-width: 992px) {
-      top: -1rem;
-      bottom: -1rem;
-      right: -1rem;
-      left: -1rem;
+      top: -0.8rem;
+      bottom: -0.8rem;
+      right: -0.8rem;
+      left: -0.8rem;
     }
   }
 
@@ -104,6 +104,11 @@ const Container = styled.div`
     position: absolute;
     top: 5rem;
     left: -4rem;
+
+    @media (max-width: 992px) {
+      left: -1rem;
+      top: 4rem;
+    }
   }
 
   &.yellow {
@@ -111,6 +116,11 @@ const Container = styled.div`
     position: absolute;
     left: 9rem;
     top: -4.5rem;
+
+    @media (max-width: 992px) {
+      top: -2rem;
+      left: 6.5rem;
+    }
   }
 
   &.blue {
@@ -118,6 +128,11 @@ const Container = styled.div`
     position: absolute;
     top: 5rem;
     right: -4rem;
+
+    @media (max-width: 992px) {
+      right: -1rem;
+      top: 4rem;
+    }
   }
 
   &.purple {
@@ -125,6 +140,11 @@ const Container = styled.div`
     position: absolute;
     bottom: -4rem;
     left: 0.5rem;
+
+    @media (max-width: 992px) {
+      bottom: -1rem;
+      left: 1rem;
+    }
   }
 
   &.redAdvanced {
@@ -132,6 +152,11 @@ const Container = styled.div`
     position: absolute;
     bottom: -4rem;
     right: 1rem;
+
+    @media (max-width: 992px) {
+      bottom: -1rem;
+      right: 2rem;
+    }
   }
 `;
 

@@ -18,6 +18,7 @@ const ButtonBox = styled.div`
   margin-right: auto;
   margin-left: auto;
   margin-top: 10rem;
+  margin-bottom: 3rem;
   height: 25rem;
   background-image: url(${pentagon});
   background-size: 100%;
@@ -29,6 +30,7 @@ const ButtonBox = styled.div`
     height: 18rem;
     background-size: 80%;
     margin-top: 8rem;
+    margin-bottom: 5rem;
   }
 `;
 

@@ -27,6 +27,7 @@ const ButtonBox = styled.div`
     height: 18rem;
     background-size: 80%;
     margin-top: 8rem;
+    margin-bottom: 5rem;
   }
 `;
 

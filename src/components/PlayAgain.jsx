@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   opacity: 0;
   visibility: hidden;
 
+  @media (max-width: 992px) {
+    margin-bottom: 1rem;
+  }
+
   @keyframes moveT {
     from {
       opacity: 0;
@@ -24,17 +28,6 @@ const Wrapper = styled.div`
       visibility: visible;
     }
   }
-
-  /* @media (max-width: 1200px) {
-    position: absolute;
-    bottom: 5rem;
-    margin-right: 2rem;
-  }
-
-  @media (max-width: 992px) {
-    bottom: 12rem;
-    margin-right: 0rem;
-  } */
 `;
 
 const Status = styled.p`

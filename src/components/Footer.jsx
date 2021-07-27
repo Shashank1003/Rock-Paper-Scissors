@@ -14,6 +14,10 @@ const FooterWrapper = styled.div`
   bottom: 2rem;
   z-index: 4;
 
+  @media (max-width: 1200px) {
+    margin-top: 5rem;
+  }
+
   @media (max-width: 992px) {
     flex-direction: column;
     justify-content: center;
@@ -36,7 +40,7 @@ const BigScreenDiv = styled.div`
 
 const SmallScreenDiv = styled.div`
   margin-top: 1rem;
-  @media (min-width: 992px) {
+  @media (min-width: 993px) {
     display: none;
   }
 `;

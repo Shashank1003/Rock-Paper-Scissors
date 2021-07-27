@@ -217,7 +217,7 @@ const SmallScreenText = styled.p`
   letter-spacing: 2px;
   width: 150%;
 
-  @media (min-width: 992px) {
+  @media (min-width: 993px) {
     display: none;
   }
 `;

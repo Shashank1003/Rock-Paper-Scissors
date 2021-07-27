@@ -15,11 +15,12 @@ const ScreenWrapper = styled.div`
   @media (max-width: 992px) {
     /* justify-content: space-between; */
     margin-top: 8rem;
+    margin-bottom: 5rem;
   }
 `;
 
 const BigScreenWrapper = styled.div`
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 `;

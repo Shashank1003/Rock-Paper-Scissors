@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import rulesImg from "../images/image-rules.svg";
+import rulesImgNormal from "../images/image-rules.svg";
+import rulesImgAdvanced from "../images/image-rules-bonus.svg";
 import closeIcon from "../images/icon-close.svg";
 
 const BlackBG = styled.div`
@@ -62,12 +63,12 @@ const TopRow = styled.div`
 `;
 
 const CloseIcon = styled.img`
-position: absolute;
-bottom: 5rem;
+  position: absolute;
+  bottom: 5rem;
 
-@media (min-width: 992px) {
-  display: none;
-}
+  @media (min-width: 992px) {
+    display: none;
+  }
 `;
 
 function RulesModal(props) {
@@ -78,7 +79,10 @@ function RulesModal(props) {
           <p>RULES</p>
           <img src={closeIcon} alt="close" onClick={props.onClick} />
         </TopRow>
-        <img src={rulesImg} alt="rules" />
+        <img
+          src={props.mode === "normal" ? rulesImgNormal : rulesImgAdvanced}
+          alt="rules"
+        />
         <CloseIcon src={closeIcon} alt="close" onClick={props.onClick} />
       </WhiteBG>
     </BlackBG>
