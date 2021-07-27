@@ -29,23 +29,23 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop layout
-![](./firstScreen_normalMode.png)
+![](screenshots/firstScreen_normalMode.png)
 
-![](./firstScreen_advancedMode.png)
+![](screenshots/firstScreen_advancedMode.png)
 
-![](./secondScreen_normalMode.png)
+![](screenshots/secondScreen_normalMode.png)
 
 
 #### Mobile layout
-![](./firstScreen_mobile.png)
+![](screenshots/firstScreen_mobile.png)
 
-![](./secondScreen_mobile.png)
+![](screenshots/secondScreen_mobile.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [SOlution on Frontend Mentor](https://www.frontendmentor.io/solutions/completed-bonus-challenge-using-react-js-Tud1cDv0d)
+- Live Site URL: [Rock-Paper-Scissors](https://rock-paper-scissors-fawn.vercel.app/)
 
 ## My process
 
@@ -80,7 +80,6 @@ if ((a === "conditionA") && (b === "conditionB" || b === "conditionC")){
 ### Useful resources
 
 - [Logical Operators AND and OR with Compound if statements](https://www.youtube.com/watch?v=OLXyquuM05Q) - This helped me in properly writing multiple AND / OR logic.
-
 - [If Else Conditionals & Switches in JavaScript](https://www.youtube.com/watch?v=vaZpDYOuprA&t=920s) - This is good tutorial to understand different logical operators in js. 
 
 ## Author

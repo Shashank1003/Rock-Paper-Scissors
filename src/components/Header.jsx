@@ -14,21 +14,21 @@ const Container = styled.div`
   margin-top: 3rem;
   width: 700px;
 
-  @media (max-width: 992px){
-      width: 90vw;
-      padding: 1rem;
-      border-radius: 7px;
-      margin-top: 2rem;
+  @media (max-width: 992px) {
+    width: 90vw;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-top: 2rem;
   }
 `;
 
 const Heading = styled.img`
-align-self: center;
+  align-self: center;
 
-@media (max-width: 992px) {
+  @media (max-width: 992px) {
     width: 7rem;
     height: 4rem;
-}
+  }
 `;
 
 const ScoreBox = styled.div`
@@ -41,8 +41,8 @@ const ScoreBox = styled.div`
   margin-right: 0.5rem;
 
   @media (max-width: 992px) {
-      width: 5rem;
-      height: 5rem;
+    width: 5rem;
+    height: 5rem;
   }
 `;
 
@@ -51,7 +51,7 @@ const P = styled.p`
   color: hsl(229, 64%, 46%);
 
   @media (max-width: 992px) {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -61,14 +61,14 @@ const Score = styled.p`
   color: hsl(229, 25%, 31%);
 
   @media (max-width: 992px) {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 `;
 
 function Header(props) {
   return (
     <Container>
-      <Heading src={logo} />
+      <Heading src={logo} alt="rock paper scissors" />
       <ScoreBox>
         <P>SCORE</P>
         <Score>{props.score}</Score>
